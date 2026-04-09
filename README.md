@@ -16,7 +16,7 @@
 
 サンプルコードは、章ごとに分かれて収録しています。2章なら`src/ch2`以下に、3章なら`src/ch3`以下にサンプルコードが入っています。さらに、章の中で複数のサンプルコードがある場合は、さらにサブディレクトリを切って収録しています。
 
-ZIPファイルで一括ダウンロードもできます。[→こちらのRelase](https://github.com/kujirahand/book-browser-coding-sample/releases)からダウンロードしてください。
+ZIPファイルで一括ダウンロードもできます。[→こちら](https://github.com/kujirahand/book-browser-coding-sample/releases)からダウンロードしてください。
 
 ## (特典) Go言語とRustの詳しい解説について
 
