@@ -16,9 +16,7 @@ go get github.com/lucasb-eyer/go-colorful@latest
 ```md
 以下のGo言語のプログラムを、JavaScript初心者でも分かるように解説してください。特に、Go言語の文法について、詳しく解説してください。
 -----
-\`\`\`go
 <プログラム>
-\`\`\`
 ```
 
 ### src/ch5/fractal-image-tool/app.go
