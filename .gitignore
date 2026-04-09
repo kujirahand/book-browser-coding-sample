@@ -209,3 +209,6 @@ __marimo__/
 # Generated large vector-search artifacts
 src/ch6/vec_search/data/docs.faiss
 src/ch6/vec_search/data/docs_meta.json
+
+# macOS Finder metadata
+.DS_Store
