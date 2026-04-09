@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIノートブック</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar"><!-- 画面左側サイドバーの定義 --- (*1) -->
+        <h1>AIノートブック</h1>
+        <div class="mode-buttons">
+          <button id="editModeBtn" class="active">編集モード</button>
+          <button id="questionModeBtn">AI質問モード</button>
+        </div>
+        <button id="newFileBtn" class="new-file">新規ファイル</button>
+        <ul id="fileList"></ul>
+      </aside>
+      <main class="main"><!-- メインエリアの定義 --- (*2) -->
+        <section id="editPanel" class="panel">
+          <div class="toolbar">
+            <input id="fileNameInput" type="text" placeholder="ファイル名" />
+            <button id="saveBtn">保存</button>
+          </div>
+          <textarea id="editor" placeholder="ここに本文を入力します"></textarea>
+        </section>
+        <section id="questionPanel" class="panel hidden">
+          <div class="toolbar">
+            <input id="questionInput" type="text" placeholder="質問を入力してください" />
+            <button id="askBtn">質問</button>
+            <button id="summarizeBtn">要約</button>
+            <button id="drawBtn">作図</button>
+          </div>
+          <div id="answerOutput" class="output"></div>
+          <div id="diagramOutput" class="diagram"></div>
+        </section>
+      </main>
+    </div>
+    <!-- スクリプトの取り込み --- (*3) -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="/static/script.js"></script>
+  </body>
+</html>

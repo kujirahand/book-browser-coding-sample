@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>アイデアバンク管理画面</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="panel">
+      <h1>保存済みアイデア</h1>
+      <ul id="list"></ul>
+    </aside>
+    <section class="panel">
+      <main>
+        <h2 id="title">アイデアを選択してください</h2>
+        <p id="summary"></p>
+        <div id="tags"></div>
+        <h3>本文</h3>
+        <div id="text" class="box"></div>
+        <div id="source" class="meta"></div>
+        <h3>発展アイデア</h3>
+        <div id="ideas" class="ideas-grid"></div>
+      </main>
+    </section>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>

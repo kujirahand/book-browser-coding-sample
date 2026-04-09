@@ -1,0 +1,4 @@
+flask
+litellm
+numpy
+faiss-cpu
