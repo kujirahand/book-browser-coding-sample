@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ファクトチェックツール</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>ファクトチェックツール</h1>
+  <p class="muted">OpenAI/Claude/Geminiでファクトチェックします</p>
+  <textarea id="claim" placeholder="ここに調べたいことを入力"></textarea>
+  <br />
+  <button id="checkBtn">ファクトチェックする</button>
+  <div id="result"></div>
+  <div id="status" class="box muted">待機中</div>
+  <script src="/static/checker.js"></script>
+</body>
+</html>
