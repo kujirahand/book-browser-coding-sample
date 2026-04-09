@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Image Downloader",
+  "version": "1.0",
+  "description": "ページ内の全画像をダウンロード",
+  "permissions": ["scripting", "activeTab", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Image Downloader"
+  }
+}

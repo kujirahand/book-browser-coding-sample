@@ -1,0 +1,165 @@
+:root {
+  --bg: #f5f7f8;
+  --panel: #ffffff;
+  --line: #dde3e6;
+  --accent: #1f7a8c;
+  --text: #1a2127;
+  --sub: #4f616d;
+  --card-edge: #d4dde2;
+  --card-shadow: 0 8px 20px rgba(24, 54, 64, 0.08);
+  --card-shadow-hover: 0 14px 28px rgba(24, 54, 64, 0.14);
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 0, #d9ecf2 0%, var(--bg) 48%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.45), rgba(233, 241, 244, 0.35));
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+  gap: 16px;
+  padding: 16px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--card-edge);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  overflow: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 14px 16px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+#list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+#list li {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1px solid var(--card-edge);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff, #f8fcfd);
+  box-shadow: 0 4px 10px rgba(24, 54, 64, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+
+#list li:hover {
+  transform: translateY(-1px);
+  border-color: #c1d5dc;
+  box-shadow: 0 8px 14px rgba(24, 54, 64, 0.1);
+}
+
+#list li.active {
+  background: #e7f5f8;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  box-shadow: 0 8px 16px rgba(31, 122, 140, 0.2);
+}
+
+.meta {
+  color: var(--sub);
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+}
+
+#title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+#summary {
+  color: var(--sub);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #e8f4f7;
+  color: #155462;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.idea-card {
+  position: relative;
+  border: 1px solid var(--card-edge);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
+  box-shadow: var(--card-shadow);
+  padding: 14px;
+  line-height: 1.6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.idea-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: linear-gradient(90deg, #5aa5b6, #8fd0da);
+}
+
+.idea-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.box {
+  padding: 16px;
+  border: 1px solid var(--card-edge);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff, #fbfeff);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .panel {
+    max-height: 35vh;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Ad Blocker",
+    "version": "1.0.0",
+    "description": "簡単な広告ブロッカー",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 12px;
+  width: 420px;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 10px;
+}
+
+#status {
+  margin: 10px 0 0;
+  color: #333;
+  font-size: 13px;
+}
+
+#status.error {
+  color: #b00020;
+}

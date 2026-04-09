@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>判例ベクトル検索</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>判例ベクトル検索</h1>
+  <form id="searchForm">
+    <input id="q" type="text" placeholder="検索キーワードを入力" required>
+    <input id="topk" type="number" min="1" max="50" value="5">
+    <button type="submit">検索</button>
+  </form>
+  <div id="status"></div>
+  <div id="results"></div>
+  <script>
+    // DOM要素を取得
+    const form = document.getElementById("searchForm");
+    const statusEl = document.getElementById("status");
+    const resultsEl = document.getElementById("results");
+    // フォームのsubmitイベントを処理 --- (*1)
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault(); // デフォルトの動作を無効にする
+      // クエリーqとtop_kを取得 --- (*2)
+      const q = document.getElementById("q").value.trim();
+      const topk = document.getElementById("topk").value;
+      if (!q) return;
+      statusEl.textContent = "検索中...";
+      resultsEl.innerHTML = "";
+      try {
+        // クエリーを検索サーバーに送信する --- (*3)
+        const url = `/search?q=${encodeURIComponent(q)}&top_k=${encodeURIComponent(topk)}`;
+        const res = await fetch(url);
+        const data = await res.json();
+        if (!res.ok) {
+          statusEl.textContent = data.error || "検索に失敗しました";
+          return;
+        }
+        // 検索結果をHTMLに表示 --- (*4)
+        statusEl.textContent = `${data.results.length}件ヒットしました`;
+        for (const item of data.results) {
+          const box = document.createElement("div");
+          box.className = "result";
+          const meta = document.createElement("div");
+          meta.className = "meta";
+          meta.textContent = `score=${item.score.toFixed(4)}` +
+            `\n${item.source} (id:${item.chunk_id})`;
+          const text = document.createElement("div");
+          text.textContent = item.text;
+          box.appendChild(meta);
+          box.appendChild(text);
+          resultsEl.appendChild(box);
+        }
+      } catch (err) {
+        statusEl.textContent = `エラー: ${err}`;
+      }
+    });
+  </script>
+</body>
+</html>

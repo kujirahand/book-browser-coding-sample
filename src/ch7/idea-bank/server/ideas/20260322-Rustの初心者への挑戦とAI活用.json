@@ -1,0 +1,20 @@
+{
+  "title": "Rustの初心者への挑戦とAI活用",
+  "summary": "Rustはシステムプログラミング向けの言語で初心者には難しいが、生成AIを利用することで学びやすくなる。AIがコード実装をサポート。",
+  "tags": [
+    "Rust",
+    "プログラミング",
+    "AI",
+    "初心者",
+    "システムプログラミング"
+  ],
+  "ideas": [
+    "AIによるRust学習コースの開発",
+    "RustのチュートリアルにAIガイドを追加",
+    "AIがコードレビューを行うプラットフォームの構築",
+    "Rustのエラーメッセージを解説するAIツール",
+    "RustプロジェクトのテンプレートをAIが生成する機能"
+  ],
+  "source_url": "http://localhost:7450/repos/book-browser-dev-draft/index.php?ch4%2Fcol-rust-is-difficult.md&show",
+  "source_title": "browser-dev - ch4/col-rust-is-difficult.md"
+}

@@ -1,0 +1,43 @@
+#text_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#text {
+    font-size: 1.2em;
+    display: block;
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: rgba(240, 240, 240, 1);
+    -webkit-font-smoothing: antialiased;
+    resize: none;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+button {
+    font-size: 1.5em;
+    height: 30px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 20px;
+    line-height: 30px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#buttons {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

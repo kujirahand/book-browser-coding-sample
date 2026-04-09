@@ -1,0 +1,3 @@
+# Pythonのプログラム
+print("Hello, World!")
+

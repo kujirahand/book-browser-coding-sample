@@ -1,0 +1,10 @@
+### 指示:
+Playwrightを利用して会員制サイトにログインしてCSVファイルをダウンロードしてください。
+
+### 動作ステップ:
+1. ログインページ`https://uta.pw/sakusibbs/users.php?action=login`を開く
+    - ログイン情報(user:`JS-TESTER`, pass:`ipCU12ySxI`)を入力
+    - `ログイン`ボタンをクリック
+2. ページ内のリンク `★マイページ`をクリック
+3. CSVファイルをダウロードするために、`一覧をCSVでダウンロード`というリンクをクリック
+4. ダウンロードしたCSVを`mcp-mypage-mmlist.csv`という名前で保存
