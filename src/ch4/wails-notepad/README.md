@@ -22,7 +22,7 @@ Go言語の初心者です。
 
 ## app.goをJS風に解説したもの
 
-以下は、[src/ch4/wails-notepad/app.go](src/ch4/wails-notepad/app.go)の内容を上記のプロンプトと一緒に、ChatGPTに与えたものです。
+以下は、[app.go](app.go)の内容を上記のプロンプトと一緒に、ChatGPTに与えたものです。
 
 Wails の `app.go` は、**Goで書くバックエンドの本体**です。
 なので JavaScript にそのまま置き換えるというより、**「同じ役割を JavaScript で書くならこうなる」**と考えるのが自然です。
