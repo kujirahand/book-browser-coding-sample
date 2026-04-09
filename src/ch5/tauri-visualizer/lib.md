@@ -155,7 +155,7 @@ import "./csv_processing.js";
 
   * `csv_processing.rs` というファイルをこのモジュールとして組み込む
 
-つまり、前回の `csv_processing.rs` がこの `lib.rs` から見えるようになります。
+つまり、 `csv_processing.rs` がこの `lib.rs` から見えるようになります。
 
 ---
 
@@ -768,7 +768,7 @@ if (result.error) {
 
 ---
 
-# この `lib.rs` と前回の `csv_processing.rs` の関係
+# この `lib.rs` と `csv_processing.rs` の関係
 
 この2つのファイルは、役割分担がはっきりしています。
 
