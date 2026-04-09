@@ -4,14 +4,14 @@
 
 ## 含まれるプログラム
 
-- `scraping_test.py`: `requests` とBeautifulSoupを使ってページのタイトルや見出しを取得する、静的スクレイピングの基本例です。
-- `selenium_test.py`: Seleniumを使ってブラウザを自動操作するための導入サンプルです。
-- `playwright_test.py`: Playwrightでページを開き、タイトルや要素テキストを取得する基本例です。
-- `login_download.py`: ログイン後に画面遷移しながらデータを取得する自動処理の例です。
-- `playwright_kawase.py`: Playwrightで為替データなどを扱う取得処理のサンプルです。
-- `sakusi_get_list.py`: 特定サイトから作品一覧を収集するPlaywrightスクリプトです。
-- `sakusi_get_list_to_csv.py`: 取得した一覧をCSVへ保存する版です。
-- `demo_keiri/`: 複数画面の巡回、抽出、保存をまとめた実務寄りのサンプルプロジェクトです。
+- [scraping_test.py](scraping_test.py): `requests` とBeautifulSoupを使ってページのタイトルや見出しを取得する、静的スクレイピングの基本例です。
+- [selenium_test.py](selenium_test.py): Seleniumを使ってブラウザを自動操作するための導入サンプルです。
+- [playwright_test.py](playwright_test.py): Playwrightでページを開き、タイトルや要素テキストを取得する基本例です。
+- [login_download.py](login_download.py): ログイン後に画面遷移しながらデータを取得する自動処理の例です。
+- [playwright_kawase.py](playwright_kawase.py): Playwrightで為替データなどを扱う取得処理のサンプルです。
+- [sakusi_get_list.py](sakusi_get_list.py): 特定サイトから作品一覧を収集するPlaywrightスクリプトです。
+- [sakusi_get_list_to_csv.py](sakusi_get_list_to_csv.py): 取得した一覧をCSVへ保存する版です。
+- [demo_keiri](demo_keiri/): 複数画面の巡回、抽出、保存をまとめた実務寄りのサンプルプロジェクトです。
 
 ## 学べること
 

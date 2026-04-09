@@ -4,11 +4,11 @@
 
 ## 含まれるプログラム
 
-- `ollama_test.py`: Ollamaで起動したローカルLLMへ問い合わせを送る基本テストです。
-- `ollama_embedding_test.py`: OllamaのEmbedding機能を使ってベクトルを生成するサンプルです。
-- `ainote/`: ノート保存、検索、要約、作図支援をまとめたAIノートアプリです。
-- `diagram-agent/`: 指示からMermaid図を生成する作図支援アプリです。
-- `idea-bank/`: ブラウザで選択した文章を保存し、AIでタグや要約を付けるアイデア管理アプリです。
+- [ollama_test.py](ollama_test.py): Ollamaで起動したローカルLLMへ問い合わせを送る基本テストです。
+- [ollama_embedding_test.py](ollama_embedding_test.py): OllamaのEmbedding機能を使ってベクトルを生成するサンプルです。
+- [ainote](ainote/): ノート保存、検索、要約、作図支援をまとめたAIノートアプリです。
+- [diagram-agent](diagram-agent/): 指示からMermaid図を生成する作図支援アプリです。
+- [idea-bank](idea-bank/): ブラウザで選択した文章を保存し、AIでタグや要約を付けるアイデア管理アプリです。
 
 ## 学べること
 

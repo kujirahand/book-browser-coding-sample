@@ -4,10 +4,10 @@
 
 ## 含まれるプログラム
 
-- `hello_ext`: ポップアップにランダムな格言を表示する最小構成の拡張です。拡張機能の基本ファイル構成と、JavaScriptでUIを更新する流れを確認できます。
-- `copy_title_ext`: 開いているページのタイトルとURLを取得し、クリップボードへコピーする拡張です。`chrome.tabs` APIの基本的な利用例になっています。
-- `image_downloader_ext`: ページ内の画像を収集してダウンロードする拡張です。コンテンツスクリプトとポップアップUIの連携を学べます。
-- `local_llm_bbs_ext`: LM Studioと連携して、掲示板風のページへ返信文を自動挿入する拡張です。ローカルLLMを使った実践的なブラウザ拡張の例です。
+- [hello_ext](hello_ext/): ポップアップにランダムな格言を表示する最小構成の拡張です。拡張機能の基本ファイル構成と、JavaScriptでUIを更新する流れを確認できます。
+- [copy_title_ext](copy_title_ext/): 開いているページのタイトルとURLを取得し、クリップボードへコピーする拡張です。`chrome.tabs` APIの基本的な利用例になっています。
+- [image_downloader_ext](image_downloader_ext/): ページ内の画像を収集してダウンロードする拡張です。コンテンツスクリプトとポップアップUIの連携を学べます。
+- [local_llm_bbs_ext](local_llm_bbs_ext/): LM Studioと連携して、掲示板風のページへ返信文を自動挿入する拡張です。ローカルLLMを使った実践的なブラウザ拡張の例です。
 
 ## 学べること
 

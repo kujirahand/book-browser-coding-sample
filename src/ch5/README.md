@@ -4,11 +4,11 @@
 
 ## 含まれるプログラム
 
-- `ad-blocker-css/`: CSSベースで広告要素を非表示にするシンプルな広告ブロッカー拡張です。
-- `ad-blocker-dynamic/`: FastAPIとDNRを組み合わせ、ルールを動的に扱う高度な広告ブロッカーです。
-- `fractal-image-tool/`: WailsとGoでマンデルブロ集合の画像を生成するアプリです。
-- `tauri-visualizer/`: TauriとChart.jsでデータをグラフ表示する可視化アプリです。
-- `tauri-image-downloader/`: TauriとRustでWeb上の画像を収集し保存するアプリです。
+- [ad-blocker-css](ad-blocker-css/): CSSベースで広告要素を非表示にするシンプルな広告ブロッカー拡張です。
+- [ad-blocker-dynamic](ad-blocker-dynamic/): FastAPIとDNRを組み合わせ、ルールを動的に扱う高度な広告ブロッカーです。
+- [fractal-image-tool](fractal-image-tool/): WailsとGoでマンデルブロ集合の画像を生成するアプリです。
+- [tauri-visualizer](tauri-visualizer/): TauriとChart.jsでデータをグラフ表示する可視化アプリです。
+- [tauri-image-downloader](tauri-image-downloader/): TauriとRustでWeb上の画像を収集し保存するアプリです。
 
 ## 学べること
 

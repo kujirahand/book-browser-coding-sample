@@ -4,10 +4,10 @@
 
 ## 含まれるプログラム
 
-- `llm_hello.py`: LiteLLM経由で複数のLLMを同じ書き方で呼び出すサンプルです。
-- `vec_test.py`: 文章をベクトル化して類似度順に並べる基本的なベクトル検索の例です。
-- `fact_checker/`: 入力された主張に対してファクトチェックを行うFastAPIアプリです。
-- `vec_search/`: ベクトル検索とLLM回答を組み合わせたRAGサーバーのサンプルです。
+- [llm_hello.py](llm_hello.py): LiteLLM経由で複数のLLMを同じ書き方で呼び出すサンプルです。
+- [vec_test.py](vec_test.py): 文章をベクトル化して類似度順に並べる基本的なベクトル検索の例です。
+- [fact_checker](fact_checker/): 入力された主張に対してファクトチェックを行うFastAPIアプリです。
+- [vec_search](vec_search/): ベクトル検索とLLM回答を組み合わせたRAGサーバーのサンプルです。
 
 ## 学べること
 
