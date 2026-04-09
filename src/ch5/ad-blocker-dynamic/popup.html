@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynamic Ad Blocker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1>ブロックドメイン管理</h1>
+    <p>1行に1つのドメインを入力して保存します。</p>
+    <textarea id="domains" spellcheck="false"></textarea>
+    <div class="actions">
+      <button id="syncBtn" type="button">保存して同期</button>
+    </div>
+    <p id="status">待機中</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
