@@ -117,11 +117,3 @@ if (items.length > 0) {
 
 - ページのHTMLソースで `<div class="item">` が存在するか確認
 - セレクタを変更する場合は [content.js](content.js#L47) を編集
-
-## ライセンス
-
-MIT License
-
-## 作者
-
-Chrome拡張機能 - LM Studio連携プロジェクト
