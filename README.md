@@ -18,6 +18,8 @@
 
 ZIPファイルで一括ダウンロードもできます。[→こちら](https://github.com/kujirahand/book-browser-coding-sample/releases)からダウンロードしてください。
 
+-----------------
+
 ## (特典) Go言語とRustの詳しい解説について
 
 本書では、ブラウザ・コンポーネントを利用してデスクトップアプリを作る`Wails`や`Tauri`についても解説しています。これらのフレームワークでは、Go言語やRustなどのプログラミング言語を使います。ただし、実際にはフロントエンド側でHTML/CSS/JavaScriptを使い、バックエンドのほんの一部のみをGo言語やRustで記述します。
