@@ -52,7 +52,7 @@ def index():
 
 # pywebviewのウィンドウを作成して、Flaskサーバーを表示する --- (*6)
 webview.create_window(
-    "pywebviewでテキストエディタ",
+    "pywebviewでテキストエディター",
     server,
     js_api=PythonApi(),
     width=800,
