@@ -22,12 +22,9 @@ ZIPファイルで一括ダウンロードもできます。[→こちら](https
 
 ## 開発環境のインストールについて
 
-本書Appendixでも解説していますが、簡単に本書のプログラムを動かすのに必要な開発環境のインストール方法を下記で紹介します。
+本書Appendixで詳しく解説していますが、簡単に本書のプログラムを動かすのに必要な開発環境のインストール方法を下記で紹介します。
 
-- [Python](install/install-python.md)
-- [Node.js](install/install-node.md)
-- [Go言語](install/install-go.md)
-- [Rust](install/install-rust.md)
+- [Python](install/install-python.md) / [Node.js](install/install-node.md) / [Go言語](install/install-go.md) / [Rust](install/install-rust.md)
 
 -----------------
 

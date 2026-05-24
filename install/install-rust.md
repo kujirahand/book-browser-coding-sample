@@ -1,4 +1,4 @@
-# Appendix5. Rustのインストール
+# Appendix. Rustのインストール
 
 本書の5章では、Rustを利用したプログラムを紹介します。そこで、Rustのインストール方法について解説します。OSごとにインストール方法が異なるので、Windows、macOS、Linuxそれぞれの方法を解説します。
 
@@ -6,7 +6,7 @@
 
 WindowsにRustをインストールするには、次の手順を実行してください。
 
-1. Rustの公式サイト(https://www.rust-lang.org/tools/install)にアクセスします。
+1. Rustの[公式サイト](https://www.rust-lang.org/tools/install)にアクセスします。
 2. 利用中のOSに合ったバージョンのボタンをクリックしてインストーラーをダウンロードします。一般的には「DOWNLOAD RUSTUP-INIT.EXE(X64)」のボタンをクリックします。
 3. ダウンロードしたインストーラーを実行します。
 4. インストーラーの指示に従って、インストールを完了します。
@@ -42,4 +42,3 @@ $ rustc --version
 ```
 
 正しくインストールされていれば、バージョン情報が表示されます。
-

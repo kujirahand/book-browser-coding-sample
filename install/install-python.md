@@ -1,4 +1,4 @@
-# Appendix2. Pythonのインストール
+# Appendix. Pythonのインストール
 
 本書の3章以降で、Pythonを使ったプログラムを紹介します。そこで、Pythonのインストール方法を解説します。Pythonは、マルチプラットフォームで利用できるプログラミング言語で、Windows、macOS、Linuxなど、さまざまな環境で動作します。
 
@@ -6,7 +6,7 @@ Pythonのインストール方法は、利用するOSによって異なります
 
 ## WindowsでのPythonのインストール
 
-1. Pythonの公式サイト(https://www.python.org/downloads/)にアクセスします。
+1. Pythonの[公式サイト](https://www.python.org/downloads/)にアクセスします。
 2. 画面上方にある「Download Python install manager」を選んでダウンロードします。
 3. ダウンロードしたインストーラーを実行します。すると、コマンドプロンプトが表示されます。そこで「Install CPython now?(CPythonをインストールしますか？)」と尋ねられるので、「y」を入力してEnterキーを押すと、インストールが開始されます。
 4. PowerShellを開いて、次のコマンドを入力しましょう。
@@ -19,7 +19,7 @@ $ python --version
 
 macOSには、Pythonがプリインストールされていますが、バージョンが古いことがあります。最新のPythonをインストールするには、Homebrewというパッケージマネージャーを利用する方法が一般的です。
 
-1. Homebrewがインストールされていない場合は、公式サイト(https://brew.sh/)の指示に従ってインストールします。
+1. Homebrewがインストールされていない場合は、[公式サイト](https://brew.sh/)の指示に従ってインストールします。
 2. ターミナルを開いて、次のコマンドを入力してPythonをインストールします。
 
 ```sh
