@@ -79,7 +79,7 @@ func (a *App) GenImage(cx, cy, zoom float64, maxIter int) (string, error) {
 	return "data:image/png;base64," + encoded, nil
 }
 
-// 実際にマンデル集合の画像を生成する関数 --- (*7)
+// 実際にマンデルブロ集合の画像を生成する関数 --- (*7)
 func genImage(w, h int, cx, cy, zoom float64, maxIter int) image.Image {
 	// 空のRGBA画像を作成
 	img := image.NewRGBA(image.Rect(0, 0, w, h))
