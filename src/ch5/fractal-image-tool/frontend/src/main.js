@@ -25,7 +25,7 @@ const zoomFactor = 1.5;
 let currentImageData = '';
 // マンデルブロ集合の画像を生成してキャンバスに描画する関数 --- (*6)
 async function drawImage() {
-    // Goの関数を呼び出して画像を生成 --- (*6)
+    // Goの関数を呼び出して画像を生成
     const b64data = await GenImage(cx, cy, zoom, maxIter);
     currentImageData = b64data;
     // 生成された画像をキャンバスに描画 --- (*7)
