@@ -31,7 +31,7 @@ app.on("activate", () => {
     createWindow();
   }
 });
-// レンダリングプロセスから呼び出せるAPIを定義 --- (※1)
+// レンダラープロセスから呼び出せるAPIを定義 --- (※1)
 ipcMain.handle("getProverb", (event) => {
   // ここで何らかの処理を行って結果を返す
   const textFile = path.join(__dirname, "proverb.txt");
