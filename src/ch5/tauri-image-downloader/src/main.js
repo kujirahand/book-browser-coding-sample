@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     collectAndDownload();
   });
-  // リストに値を表示するする関数
+  // リストに値を表示する関数
   function renderList(container, items) {
     container.innerHTML = ""; // 既存の内容をクリア
     for (const item of items) {
