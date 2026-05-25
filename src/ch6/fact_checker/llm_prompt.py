@@ -21,7 +21,7 @@ SYSTEM_PROMPT = f"""
     "verdict": "{'|'.join(VERDICT_LABELS)}",
     "confidence": 0.0,
     "summary": "100文字以内の短い要約",
-    "content": "1000文字以内で理由を説明",
+    "content": "1000文字以内で理由を説明"
 }}
 ```
 - confidence は 0.0-1.0 の範囲で指定してください。
