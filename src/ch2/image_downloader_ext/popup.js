@@ -6,7 +6,7 @@ const statusEl = document.getElementById('status');
 const downloadListEl = document.getElementById('downloadList');
 const downloadBtn = document.getElementById('downloadBtn');
 // ダウンロードボタンを押した時の処理 --- (*2)
-const flagInejcted = {};
+const flagInejected = {};
 downloadBtn.addEventListener('click', async () => {  
   // ダウンロードした画像のリストをクリア
   downloadListEl.innerHTML = ''; 
@@ -21,13 +21,13 @@ downloadBtn.addEventListener('click', async () => {
       console.log(`[Popup] タブ ${tab.id} (${tab.url}) へメッセージ送信`);
       try {
         // まずコンテンツスクリプトを注入 --- (*4)
-        if (!flagInejcted[tab.id]) {
+        if (!flagInejected[tab.id]) {
             console.log(`[Popup] タブ ${tab.id} へスクリプト注入`);
             await chrome.scripting.executeScript({
             target: {tabId: tab.id},
             files: ['content.js']
             });
-            flagInejcted[tab.id] = true;
+            flagInejected[tab.id] = true;
         }
         // 画像URLを取得するようメッセージを送信 --- (*5)
         const response = await chrome.tabs.sendMessage(
