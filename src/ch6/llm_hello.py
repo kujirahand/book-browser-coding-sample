@@ -7,7 +7,7 @@ from litellm import completion
 
 # 利用するモデルの一覧 --- (*1)
 models = [
-    "claude-3-haiku-20240307",  # Anthropicのモデル
+    "claude-haiku-4-5",  # Anthropicのモデル
     "gemini/gemini-3.1-flash-lite-preview",  # Googleのモデル
     "gpt-5-nano",  # OpenAIのモデル
 ]
